@@ -1176,3 +1176,40 @@ main {
     width: 100%;
   }
 }
+
+
+/* ---------- WhatsApp float ---------- */
+.wa-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #072915;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.wa-float:hover {
+  transform: translateY(-2px);
+  background: #2fe576;
+  color: #072915;
+  box-shadow: 0 14px 34px rgba(37,211,102,0.35);
+}
+.wa-float svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+}
+.wa-note { display: none; }
+@media (max-width: 720px) {
+  .wa-float span { display: none; }
+  .wa-float { padding: 0.95rem; border-radius: 50%; }
+}
